@@ -1,0 +1,47 @@
+var 
+    largo piscina1: entero, 
+    ancho piscina1: entero, 
+    profundidad piscina1: entero,
+fvar
+
+var 
+    largo piscina2: entero, 
+    ancho piscina2: entero, 
+    profundidad piscina2: entero,
+fvar
+
+PROCES calcularvolumen
+    IMPUT = largo, ancho, profundidad
+    SET volumen = largo * ancho * profundidad
+    PRINT = "El Volumen es: " + volumen
+END
+
+PROCES calculararea
+    IMPUT = largo, ancho
+    SET area = largo * ancho
+    PRINT = "El area es: " + area
+END
+
+PROCES calcularanchototal
+    IMPUT = ancho
+    SET anchototal = ancho * 2
+    PRINT = "EL ancho total de las dos piscinas es: " + ancho total
+END
+
+PROCES area2piscinas
+    IMPUT = largo1, ancho1, ancho2
+    SET area2piscinas = largo1 * (ancho1 + ancho2)
+    PRINT = "El area total de las dos piscinas es :" + area2piscinas
+END
+
+PROCES volumen2piscinas
+    IMPUT = largo1, largo2, ancho1, ancho2, profundidad1, profundidad2
+    SET volumen2piscinas = largo1 * ancho1 * profundidad1 + largo2 * ancho2 * profundidad2
+    PRINT = "El volumen de las dos piscinas juntas es :" + volumen2piscinas
+END
+
+PROCES intercambiarvalores
+    IMPUT = intercambiar = profundidad1;
+    profundidad1 = profundidad2
+    profundidad2 ? intercambiar
+END
